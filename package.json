@@ -1,0 +1,25 @@
+{
+  "name": "found.scss",
+  "version": "0.0.1",
+  "description": "foundational scss",
+  "main": "src/found.scss",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/calledT/found.scss.git"
+  },
+  "keywords": [
+    "scss",
+    "mixin",
+    "function",
+    "normalize.css"
+  ],
+  "author": "calledT",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/calledT/found.scss/issues"
+  },
+  "homepage": "https://github.com/calledT/found.scss#readme"
+}

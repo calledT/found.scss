@@ -1,0 +1,157 @@
+.ellipsis,
+.text-truncate,
+.text-ellipsis {
+	@include text-ellipsis;
+}
+
+.text-break {
+  word-wrap: break-word;
+  hyphens: auto;
+}
+
+.text-nowrap {
+	white-space: nowrap;
+}
+
+.text-left {
+	text-align: left!important;
+}
+
+.text-right {
+	text-align: right!important;
+}
+
+.text-center {
+	text-align: center!important;
+}
+
+.text-justify {
+	text-align: justify!important;
+}
+
+.text-xs {
+	font-size: $font-size-xs!important;
+}
+
+.text-sm {
+	font-size: $font-size-sm!important;
+}
+
+.text-lg {
+	font-size: $font-size-lg!important;
+}
+
+.text-xl {
+	font-size: $font-size-xl!important;
+}
+
+.text-xxl {
+	font-size: $font-size-xxl!important;
+}
+
+.text-xxxl {
+	font-size: $font-size-xxxl!important;
+}
+
+.text-primary {
+  color: $primary!important;
+}
+
+.text-secondary {
+  color: $secondary!important;
+}
+
+.text-success {
+  color: $success!important;
+}
+
+.text-warning {
+  color: $warning!important;
+}
+
+.text-danger {
+  color: $danger!important;
+}
+
+.text-info {
+	color: $info!important;
+}
+
+.text-dark {
+	color: $black!important;
+}
+
+.text-gray {
+	color: $gray!important;
+}
+
+.text-underline {
+	text-decoration: underline!important;
+}
+
+.link-muted {
+	color: $text-muted;
+
+	a {
+		color: $text-muted;
+	}
+
+	&:hover,
+	& a:hover {
+		color: darken($text-muted, 10%);
+	}
+}
+
+/**
+ * Responsive img
+ */
+.fluid-img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+  @include visuallyhidden;
+}
+
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+  visibility: hidden;
+}
+
+
+/* 强制文本换行 */
+.textwrap, .textwrap td, .textwrap th {
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.textwrap-table {
+  table-layout: fixed;
+}
+
+/* 提供 serif 版本的字体设置: iOS 下中文自动 fallback 到 sans-serif */
+.serif {
+  font-family: Palatino, Optima, Georgia, serif;
+}
+
+@if not $legacy {
+  .browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+  }
+}
